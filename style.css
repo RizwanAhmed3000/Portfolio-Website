@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.NavBar{
+    background-color: rgb(22, 94, 72);
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ListMiddel li{
+    list-style: none;
+    margin: 20px;
+    color: white;
+    font-weight: 100;
+    font-size: 12px;
+}
+.ListMiddel li a{
+    text-decoration: none;
+    color: white;
+}
+.ListMiddel li:hover, .ListMiddel li a:hover{   
+    color: gold;
+    transform: scale(1.2);
+    transition-duration: 0.50s;
+}
+.ListMiddel ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nameLeft{
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+}
+.DownloadCV{
+    padding: 8px;
+    font-size: 6px;
+    width: 20em;
+    color: rgb(17, 82, 63) ;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+}
+.DownloadCV:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+.part1{
+    color: white;
+}
+.container{
+    background-color: rgb(17, 82, 63);
+    display: flex;
+    justify-content: space-around;
+}
+.leftContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5px 30px 5px 130px;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.leftContainer p, .leftContainer h1{
+    padding: 12px 0px;
+
+}
+.rightContainer{
+    margin: 0px 100px;
+    margin-top: 20px;
+}
+.rightContainer img {
+    max-width:400px;
+}
+#webbuild{
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: gold;
+    padding-bottom: 25px;
+}
+#intro{
+    font-size: 42px;
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 2px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0px;
+}
+.Protfolio{
+    margin-left: 50px;
+    padding: 8px;
+    font-size: 10px;
+    width: 12em;
+    color: rgb(17, 82, 63) ;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+}
+.aboutMe{
+    padding: 8px;
+    font-size: 10px;
+    width: 12em;
+    color: rgb(17, 82, 63) ;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+}
+.Protfolio:hover, .aboutMe:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+@media(min-width: 501px) and (max-width: 768px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .leftContainer{
+        padding: 0px;
+        align-items: center;
+    }
+    #intro{
+        text-align: center;
+    }
+}
+@media(max-width: 1024px){
+    #intro{
+        font-size: 28px;
+    }
+}
+@media(min-width: 320px) and (max-width: 500px){
+    .container{
+        flex-direction: column;
+    }
+    .leftContainer{
+        padding: 0px;
+        align-items: center;
+    }
+    #intro{
+        text-align: center;
+    }
+    .rightContainer{
+        margin: 0px auto;
+    }
+    .rightContainer img {
+        max-width: 320px;
+    }
+    .ListMiddel li{
+        margin: 10px;
+    }
+}
