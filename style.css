@@ -25,7 +25,8 @@
 }
 .ListMiddel li:hover, .ListMiddel li a:hover{   
     color: gold;
-    transform: scale(1.2);
+    transform: scale(1.1);
+    letter-spacing: 1.5px;
     transition-duration: 0.50s;
 }
 .ListMiddel ul{
@@ -125,6 +126,8 @@
     transform: scale(1.1);
     transition-duration: 0.3s;
 }
+
+/* Tablet */
 @media(min-width: 501px) and (max-width: 768px){
     .container{
         flex-wrap: wrap;
@@ -137,11 +140,15 @@
         text-align: center;
     }
 }
+
+/* normal */
 @media(max-width: 1024px){
     #intro{
         font-size: 28px;
     }
 }
+
+/* Smartphone */
 @media(min-width: 320px) and (max-width: 500px){
     .container{
         flex-direction: column;
@@ -149,6 +156,9 @@
     .leftContainer{
         padding: 0px;
         align-items: center;
+    }
+    .leftContainer p{
+        text-align: center;
     }
     #intro{
         text-align: center;
@@ -161,5 +171,14 @@
     }
     .ListMiddel li{
         margin: 10px;
+    }
+    .buttons{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .Protfolio{
+        margin-left: 0%;
+        margin-top: 8px;
     }
 }
