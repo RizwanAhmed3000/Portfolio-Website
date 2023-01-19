@@ -25,6 +25,7 @@
 }
 .ListMiddel li:hover, .ListMiddel li a:hover{   
     color: gold;
+    text-shadow: 0px 0px 3px gold;
     transform: scale(1.1);
     letter-spacing: 1.5px;
     transition-duration: 0.50s;
@@ -53,11 +54,13 @@
 .DownloadCV:hover{
     transform: scale(1.1);
     transition-duration: 0.3s;
+    box-shadow: 6px 5px 7px 0px rgba(29, 29, 29, 0.699);
 }
 .part1{
     color: white;
 }
 .container{
+    background-image: linear-gradient(rgb(17, 82, 63) , rgb(20, 94, 72) , rgb(33, 124, 97) , rgb(36, 134, 105));
     background-color: rgb(17, 82, 63);
     display: flex;
     justify-content: space-around;
@@ -93,6 +96,7 @@
     font-size: 42px;
     font-family: 'Noto Serif', serif;
     letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(12, 12, 12, 0.829);
 }
 .buttons{
     display: flex;
@@ -125,6 +129,7 @@
 .Protfolio:hover, .aboutMe:hover{
     transform: scale(1.1);
     transition-duration: 0.3s;
+    box-shadow: 6px 5px 7px 0px rgba(29, 29, 29, 0.699);
 }
 
 /* Tablet */
