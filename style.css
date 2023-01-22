@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .NavBar{
-    background-color: rgb(22, 94, 72);
+    /* background-color: rgb(22, 94, 72); */
     padding: 5px;
     display: flex;
     justify-content: space-around;
@@ -54,14 +54,26 @@
 .DownloadCV:hover{
     transform: scale(1.1);
     transition-duration: 0.3s;
-    box-shadow: 6px 5px 7px 0px rgba(29, 29, 29, 0.699);
+    transition-timing-function: ease;
+    box-shadow: 1px 0px 8px 0px gold;
+    background-color: gold;
 }
 .part1{
     color: white;
+    position: absolute;
+}
+#myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -3;
+    opacity: 1;
 }
 .container{
-    background-image: linear-gradient(rgb(17, 82, 63) , rgb(20, 94, 72) , rgb(33, 124, 97) , rgb(36, 134, 105));
-    background-color: rgb(17, 82, 63);
+    /* background-image: linear-gradient(rgb(17, 82, 63) , rgb(20, 94, 72) , rgb(33, 124, 97) , rgb(36, 134, 105)); */
+    /* background-color: rgb(17, 82, 63); */
     display: flex;
     justify-content: space-around;
 }
@@ -129,7 +141,9 @@
 .Protfolio:hover, .aboutMe:hover{
     transform: scale(1.1);
     transition-duration: 0.3s;
-    box-shadow: 6px 5px 7px 0px rgba(29, 29, 29, 0.699);
+    transition-timing-function: ease-out;
+    box-shadow: 1px 0px 8px 0px gold;
+    background-color: gold;
 }
 
 /* Tablet */
@@ -185,5 +199,29 @@
     .Protfolio{
         margin-left: 0%;
         margin-top: 8px;
+    }
+}
+
+@media(min-width: 1280px) and (max-width: 2000px){
+    .container{
+        height: 91vh;
+    }
+    .rightContainer img{
+        max-width: 500px;
+    }
+    #intro{
+        font-size: 58px;
+    }
+    #webbuild{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .leftContainer p{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .Protfolio, .aboutMe{
+        font-size: 15px;
+        font-weight: 100;
     }
 }
