@@ -296,6 +296,10 @@
     .MyPic,
     .About {
         margin: 10px 0px;
+        box-shadow: none;
+    }
+    .imageContainer{
+        margin: 0%;
     }
 }
 
