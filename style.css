@@ -200,8 +200,6 @@
     transition: opacity ease-out 250ms;
 }
 
-.About {}
-
 .heading {
     margin-bottom: 50px;
     text-align: center;
@@ -220,7 +218,74 @@
     width: 50%;
     box-shadow: 20px 25px 20px -11px;
     margin: 10px;
+    position: relative;
+    overflow: hidden;
 
+}
+/* .About .aboutText{
+    position: relative;
+    overflow: hidden;
+} */
+
+.About .aboutText::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(22, 94, 72);
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    right: 0px;
+    transition: ease-in-out 350ms;
+    z-index: 1;
+}
+.About:hover .aboutText::before{
+    bottom: 0px;
+}
+/* .About:hover .aboutText h1, .About:hover .aboutText p{
+
+} */
+.specialInfo{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 15px;
+    width: 100%;
+    color: rgb(241 241 241);
+    height: 100%;
+    /* border: 2px solid black; */
+    bottom: -110%;
+    right: 0px;
+    left: 0px;
+    border-radius: 57px;
+    border-bottom-right-radius: 0px;
+    transition: ease-in-out 350ms;
+    z-index: 2;
+    /* background-color: #333399; */
+    /* visibility: hidden; */
+
+}
+.specialInfo .info{
+    margin: 5px 4px;
+    padding: 0px 10px;
+}
+
+.specialInfo .info p{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.specialInfo .info h3{
+    margin-bottom: 0px;
+    color: gold;
+    font-weight: 100;
+}
+.specialInfo .info h2{
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+}
+.About:hover .specialInfo{
+    bottom: -8%;
 }
 
 .imageContainer {
@@ -378,6 +443,9 @@
     .About {
         width: 80%;
     }
+    .imageContainer{
+        margin: 0px;
+    }
 }
 
 /* normal */
@@ -388,6 +456,16 @@
 
     #intro span h1 {
         font-size: 28px;
+    }
+    .specialInfo{
+        margin: 0px;
+        font-size: 13px;
+    }
+    .About:hover .specialInfo{
+        bottom: 0%;
+    }
+    .specialInfo .info h3{
+        margin: 0px;
     }
 }
 
@@ -449,6 +527,26 @@
     }
     .progress h3{
         font-size: smaller;
+    }
+    .specialInfo{
+        flex-direction: column;
+        font-size: 15px;
+        height: 100%;
+        padding: 10px;
+    }
+    .About:hover .specialInfo{
+        bottom: 0%;
+    }
+    .specialInfo .info{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .specialInfo .info p{
+        margin: 0px;
+    }
+    .specialInfo .info h3{
+        margin-top: 14px;
     }
 }
 
