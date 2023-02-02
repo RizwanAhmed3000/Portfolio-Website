@@ -4,7 +4,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
 }
 
 .NavBar {
@@ -14,6 +16,8 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
     /* position: fixed; */
 }
 
@@ -23,11 +27,14 @@
     color: white;
     font-weight: 100;
     font-size: 12px;
+    transition: transform ease-out 250ms;
 }
 
 .ListMiddel li a {
     text-decoration: none;
     color: white;
+    transition: transform ease-out 250ms, letter-spacing ease-out 250ms;
+
 }
 
 .ListMiddel li:hover,
@@ -36,7 +43,7 @@
     text-shadow: 0px 0px 3px gold;
     transform: scale(1.1);
     letter-spacing: 1.5px;
-    transition-duration: 0.50s;
+    transition-duration: 250ms;
 }
 
 .ListMiddel ul {
@@ -61,12 +68,13 @@
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: white;
+    transition: transform ease-out 250ms;
+
 }
 
 .DownloadCV:hover {
     transform: scale(1.1);
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
+    transition: background ease-out 250ms, transform ease-out 250ms;
     box-shadow: 1px 0px 8px 0px gold;
     background-color: gold;
 }
@@ -127,7 +135,7 @@
 }
 
 #intro {
-    font-size: 42px;
+    font-size: 54px;
     font-family: 'Noto Serif', serif;
     letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(12, 12, 12, 0.829);
@@ -135,7 +143,7 @@
 
 #intro span h1 {
     display: inline;
-    font-size: 42px;
+    font-size: 54px;
     color: gold;
     text-shadow: 0px 0px 8px gold;
 }
@@ -149,7 +157,7 @@
 .Protfolio {
     margin-left: 50px;
     padding: 8px;
-    font-size: 10px;
+    font-size: 15px;
     width: 12em;
     color: rgb(17, 82, 63);
     text-align: center;
@@ -157,11 +165,12 @@
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: white;
+    transition: transform ease-out 250ms;
 }
 
 .aboutMe {
     padding: 8px;
-    font-size: 10px;
+    font-size: 15px;
     width: 12em;
     color: rgb(17, 82, 63);
     text-align: center;
@@ -169,19 +178,19 @@
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     background-color: white;
+    transition: transform ease-out 250ms;
 }
 
 .Protfolio:hover,
 .aboutMe:hover {
     transform: scale(1.1);
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
+    transition: background ease-out 250ms, transform ease-out 250ms;
     box-shadow: 1px 0px 8px 0px gold;
     background-color: gold;
 }
 
 .part2 {
-    /* background-color: aqua; */
+    background-color: white;
     display: flex;
     padding: 20px;
     justify-content: center;
@@ -247,7 +256,7 @@
 .specialInfo{
     position: absolute;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     margin: 20px auto;
     padding: 15px;
@@ -266,6 +275,10 @@
     /* visibility: hidden; */
 
 }
+/* 
+.specialInfo .Experience{
+    align-self: center;
+} */
 .specialInfo .info{
     margin: 5px 4px;
     padding: 0px 10px;
@@ -356,7 +369,9 @@
     align-items: center;
     max-width: 100%;
     height: 400px;
-    background: linear-gradient(45deg, #f7971e, gold);}
+    padding: 30px 0px;
+    background: linear-gradient(45deg, #f7971e, gold);
+}
 .barContainer{
     width: 80%;
     height: 90%;
@@ -365,7 +380,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: white;
     padding: 13px;
     /* box-shadow: inset 0px 0px 15px 5px rgb(44, 44, 44); */
@@ -422,7 +437,64 @@
 }
 .JavaScript{
     background: linear-gradient(to right, #f00000, #dc281e);
-    width: 10%;
+    width: 35%;
+}
+
+.part4{
+    /* border: 1px solid; */
+    padding: 20px 65px;
+    background-color: rgb(22, 94, 72);
+}
+
+.part4 .myServices{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: white;
+    font-size: 42px;
+}
+
+.cardsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cards{
+    /* border: 1px solid red; */
+    background-color: rgb(241 241 241);
+    padding: 40px;
+    color: rgb(22, 94, 72);
+    margin: 10px;
+    border-radius: 25px;
+    width: 25%;
+    transition: transform ease-out 250ms;
+
+}
+
+.cards h1{
+    margin-bottom: 30px;
+}
+
+.cards h5{
+    margin-top: 20px;
+}
+
+.cards h5 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.cards p{
+    line-height: 20px;
+}
+
+.cards:hover{
+    transform: scale(1.1);
+    transition: background ease-out 250ms, transform ease-out 250ms;
+    box-shadow: 1px 0px 8px 0px gold;
+    background-color: gold;
+
 }
 
 /* Tablet */
@@ -446,16 +518,19 @@
     .imageContainer{
         margin: 0px;
     }
+    .cards{
+        width: 100%;
+    }
 }
 
 /* normal */
 @media(max-width: 1024px) {
     #intro {
-        font-size: 28px;
+        font-size: 32px;
     }
-
+    
     #intro span h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
     .specialInfo{
         margin: 0px;
@@ -467,6 +542,13 @@
     .specialInfo .info h3{
         margin: 0px;
     }
+    .cards{
+        padding: 25px;
+    }
+    .Protfolio,
+    .aboutMe{
+        font-size: 10px;
+    } 
 }
 
 /* Smartphone */
@@ -474,7 +556,7 @@
     .container {
         flex-direction: column;
     }
-
+    
     .leftContainer {
         padding: 0px;
         align-items: center;
@@ -487,15 +569,15 @@
     #intro {
         text-align: center;
     }
-
+    
     .rightContainer {
         margin: 0px auto;
     }
-
+    
     .rightContainer img {
         max-width: 320px;
     }
-
+    
     .ListMiddel li {
         margin: 10px;
     }
@@ -510,7 +592,7 @@
         margin-left: 0%;
         margin-top: 8px;
     }
-
+    
     .MyPic {
         width: 98vw;
         box-shadow: none;
@@ -521,7 +603,7 @@
         box-shadow: none;
         width: 100%;
     }
-
+    
     .imageContainer {
         margin: 0%;
     }
@@ -548,6 +630,25 @@
     .specialInfo .info h3{
         margin-top: 14px;
     }
+    .cards{
+        width: 100%;
+    }
+    .part4{
+        padding: 0;
+    }
+    .part4 .myServices{
+        margin-top: 0px;
+        padding-top: 20px;
+    }
+    .cards:hover{
+        transform: none;
+    }
+    .SliderContainer{
+        height: 50%;
+    }
+    .progress h3{
+        font-size: 10px;
+    }
 }
 
 @media(min-width: 1600px) and (max-width: 2000px) {
@@ -558,7 +659,7 @@
     .rightContainer img {
         max-width: 500px;
     }
-
+    
     #intro {
         font-size: 58px;
     }
