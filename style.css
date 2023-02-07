@@ -168,7 +168,7 @@
     transition: transform ease-out 250ms;
 }
 
-.aboutMe {
+.aboutMe, .seeMore {
     padding: 8px;
     font-size: 15px;
     width: 12em;
@@ -182,7 +182,7 @@
 }
 
 .Protfolio:hover,
-.aboutMe:hover {
+.aboutMe:hover, .seeMore:hover {
     transform: scale(1.1);
     transition: background ease-out 250ms, transform ease-out 250ms;
     box-shadow: 1px 0px 8px 0px gold;
@@ -497,6 +497,15 @@
 
 }
 
+.seeMore{
+    /* border: 1px solid; */
+    font-size: 20px;
+    width: 15%;
+    text-align: center;
+    margin: 30px auto 0px auto;
+    padding: 15px;  
+}
+
 .myPortfolio{
     text-align: center;
     margin-bottom: 40px;
@@ -510,7 +519,7 @@
 }
 .card1{
     position: relative;
-    background-color: gray;
+    background-color: gold;
     transition: transform ease-in-out 250ms;
 }
 .card1::before, .card1::after{
@@ -533,6 +542,9 @@
 }
 .card1::after{
     transform: scale(0, 1);
+}
+.card1:hover .appleHQ{
+    transition: filter ease-out 250ms;
 }
 
 /* Tablet */
@@ -561,6 +573,9 @@
     }
     .portfolioCards{
         width: 100%;
+    }
+    .seeMore{
+        width: 25%;
     }
 }
 
@@ -602,11 +617,11 @@
         padding: 0px;
         align-items: center;
     }
-
+    
     .leftContainer p {
         text-align: center;
     }
-
+    
     #intro {
         text-align: center;
     }
@@ -628,7 +643,7 @@
         flex-wrap: wrap;
         align-items: center;
     }
-
+    
     .Protfolio {
         margin-left: 0%;
         margin-top: 8px;
@@ -693,14 +708,19 @@
     .portfolioCards{
         width: 100%;
     }
-
+    .seeMore{
+        width: 40%;
+        padding: 10px;
+        /* margin-bottom: 10px; */
+    }
+    
 }
 
 @media(min-width: 1600px) and (max-width: 2000px) {
     .container {
         height: 91vh;
     }
-
+    
     .rightContainer img {
         max-width: 500px;
     }
