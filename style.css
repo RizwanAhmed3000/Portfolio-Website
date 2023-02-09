@@ -519,7 +519,7 @@
 }
 .card1{
     position: relative;
-    background-color: gold;
+    background-color: gray;
     transition: transform ease-in-out 250ms;
 }
 .card1::before, .card1::after{
@@ -545,6 +545,7 @@
 }
 .card1:hover .appleHQ{
     transition: filter ease-out 250ms;
+    transition: opacity ease-out 250ms;
 }
 
 /* Tablet */
