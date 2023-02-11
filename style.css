@@ -488,6 +488,12 @@
 .cards p{
     line-height: 20px;
 }
+.cards svg{
+    width: 25%;
+    margin-bottom: 15px;
+    fill: rgb(22, 94, 72) ;
+}
+
 
 .cards:hover{
     transform: scale(1.1);
@@ -506,7 +512,7 @@
     padding: 15px;  
 }
 
-.myPortfolio{
+.myPortfolio, .contact{
     text-align: center;
     margin-bottom: 40px;
     margin-top: 20px;
@@ -548,6 +554,39 @@
     transition: opacity ease-out 250ms;
 }
 
+.part6{
+    background-color: rgb(24 114 87);
+}
+
+.iconList{
+    display: flex;
+    justify-content: center;
+    min-height: 110px;
+    max-height: 200px;
+}
+
+.iconList svg{
+    width: 50px;
+    margin: 0px 20px;
+    fill: white;
+}
+.iconList a svg{
+    transition: transform ease-out 250ms, -webkit-box-reflect ease 250ms;
+}
+
+.iconList a svg:hover{
+    transform: scale(1.1);
+    transition: fill ease-out 250ms, transform ease-out 250ms;
+    fill: gold;
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.2));;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
 /* Tablet */
 @media(min-width: 501px) and (max-width: 768px) {
     .container {
@@ -577,6 +616,9 @@
     }
     .seeMore{
         width: 25%;
+    }
+    .cards svg{
+        width: 20%;
     }
 }
 
@@ -659,6 +701,7 @@
         margin: 13px 0px;
         box-shadow: none;
         width: 100%;
+        height: 100vh;
     }
     
     .imageContainer {
@@ -692,13 +735,15 @@
     }
     .part4{
         padding: 0;
+        padding-bottom: 10px;
     }
-    .part4 .myServices, .part5 .myPortfolio{
+    .part4 .myServices, .part5 .myPortfolio, .contact{
         margin-top: 0px;
         padding-top: 20px;
     }
     .cards:hover{
         transform: none;
+
     }
     .SliderContainer{
         height: 50%;
@@ -714,7 +759,21 @@
         padding: 10px;
         /* margin-bottom: 10px; */
     }
-    
+    .iconList{
+        flex-wrap: wrap;
+    }
+    .iconList svg{
+        margin: 0px 15px;
+    }
+    .iconList a svg:hover{
+        transform: none;
+        transition: none;
+        -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0));;
+
+    }
+    .cards svg{
+        width: 15%;
+    }
 }
 
 @media(min-width: 1600px) and (max-width: 2000px) {
