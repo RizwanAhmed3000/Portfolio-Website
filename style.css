@@ -8,6 +8,9 @@
     font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 1px;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .NavBar {
     background-color: rgb(22, 94, 72);
